@@ -1,3 +1,13 @@
+#Start kafka server and zookeeper using below commands:-
 docker-compose -f zk-single-kafka-single.yml up
 
+#Run Producer to send messages to kafka brokers 
+go run producer.go
+
+#Run Consumer to consume messages
+go run consumer.go
+
+send api request using curl (mentioned in curl file)
+
+After completion do kafka server and zookeeper down:-
 docker-compose -f zk-single-kafka-single.yml down
