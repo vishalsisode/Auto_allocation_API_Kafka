@@ -7,7 +7,18 @@ go run producer.go
 #Run Consumer to consume messages
 go run consumer.go
 
+Necessary installation needed before using curl in VSCDOE:- https://dev.to/kenji_goh/using-curl-on-vs-code-5391
 send api request using curl (mentioned in curl file)
 
 After completion do kafka server and zookeeper down:-
 docker-compose -f zk-single-kafka-single.yml down
+
+For more Info:-
+1) Kafka docker yml file:-
+https://github.com/conduktor/kafka-stack-docker-compose
+
+2)Kafka consumptin using sarama:-
+https://medium.com/@moabbas.ch/effective-kafka-consumption-in-golang-a-comprehensive-guide-aac54b5b79f0
+
+3)Go fiber package installation info:-
+https://github.com/gofiber/fiber
